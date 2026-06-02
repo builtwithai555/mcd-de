@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>McDonald's</title>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1245536130891508');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1245536130891508&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: #292929;
+      background: #fff;
+      font-family: "Roboto", Arial, sans-serif;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      background: #ffc72c;
+    }
+
+    .hero {
+      display: grid;
+      min-height: 660px;
+      background: #ffc72c;
+    }
+
+    .hero-image {
+      min-height: 300px;
+      background-image: url("https://ili.zauberportal.com/system/uploads/plain_images/images/000/003/143/original/Untitled.jpg?1668437763");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .badge {
+      position: absolute;
+      width: 20%;
+      min-width: 76px;
+      max-width: 128px;
+      left: 40%;
+      top: 5px;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 42px 16px 62px;
+      background: #ffc72c;
+    }
+
+    .content-inner {
+      width: min(100%, 460px);
+      text-align: center;
+    }
+
+    .headline {
+      margin: 0;
+      color: #292929;
+      font-family: "Asap Condensed", Arial, sans-serif;
+      font-size: clamp(34px, 4vw, 45px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      margin-top: 48px;
+      min-height: 58px;
+      padding: 15px 24px;
+      border: 1px solid #d90007;
+      border-radius: 3px;
+      color: #fff;
+      background: #d90007;
+      font-family: "Asap Condensed", Arial, sans-serif;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.1;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+
+    .cta:hover,
+    .cta:focus {
+      background: #d90007;
+      color: #fff;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .cta:active {
+      transform: translateY(0);
+    }
+
+    #footer {
+      width: 100%;
+      margin: 20px 0;
+      color: #333;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .footer-inner {
+      width: min(100% - 32px, 920px);
+      margin: 0 auto;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      margin-top: 14px;
+    }
+
+    .footer-nav a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover,
+    .footer-nav a:focus {
+      text-decoration: underline;
+    }
+
+    .compliance-notice {
+      margin: 12px auto 0;
+      max-width: 980px;
+      color: #555;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    @media (min-width: 992px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+        min-height: 660px;
+      }
+
+      .hero-image {
+        min-height: 660px;
+      }
+
+      .hero-content {
+        align-items: flex-start;
+        padding-top: 60px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .hero {
+        min-height: 0;
+      }
+
+      .hero-content {
+        padding-top: 40px;
+      }
+
+      .headline {
+        font-size: 31px;
+      }
+
+      .cta {
+        margin-top: 42px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .hero-image {
+        min-height: 300px;
+      }
+
+      .hero-content {
+        padding: 39px 15px 10px;
+      }
+
+      .headline {
+        font-size: 24px;
+      }
+
+      .cta {
+        margin-top: 42px;
+        min-height: 49px;
+        padding: 12px 18px;
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="main-wrapper">
+    <section class="hero" aria-label="McDonald's Gewinnspiel">
+      <div class="hero-image">
+        <img class="badge" src="https://ili.zauberportal.com/system/uploads/plain_images/images/000/003/144/original/ga.png?1668437997" alt="">
+      </div>
+      <div class="hero-content">
+        <div class="content-inner">
+          <h1 class="headline">Gewinne ein McDonald's Paket <br>im Gesamtwert von 250&euro;</h1>
+          <a class="cta" href="https://ili.zauberportal.com/?PR_ID=1115&amp;token-id=1025f31f08e15cb9e8780ea7b25992&amp;sub-id=353&amp;sub-id2=sub4&amp;sub-id3=sub3&amp;sid4=">Jetzt starten</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-inner">
+      <p>Dies ist ein Gewinnspiel der Bluereen Media LTD. Die abgebildete Marke ist weder Veranstalter noch Sponsor dieses Gewinnspiels und steht mit der Bluereen Media LTD in keiner gesch&auml;ftlichen Beziehung.</p>
+      <p class="compliance-notice">Facebook/Meta-Hinweis: Diese Seite ist nicht Teil der Facebook-Website oder von Meta Platforms, Inc. und wird nicht von Facebook oder Meta unterst&uuml;tzt, verwaltet oder gesponsert.</p>
+      <p class="compliance-notice">Affiliate-Hinweis: Wenn Sie auf den Button klicken, werden Sie zu einem externen Angebot weitergeleitet. F&uuml;r qualifizierte Aktionen k&ouml;nnen wir eine Provision erhalten. F&uuml;r Sie entstehen dadurch keine zus&auml;tzlichen Kosten.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
